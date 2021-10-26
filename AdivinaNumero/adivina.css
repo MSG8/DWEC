@@ -1,0 +1,47 @@
+body
+{
+	background-color: #7E7E7E;
+	color: white;
+	text-align: center;
+}
+
+h1
+{
+	margin-top: 14%;
+}
+
+p
+{
+	font-weight:bold;
+}
+
+input
+{
+	width: 40em;
+	font-size: 2em;
+	text-align: center;
+	
+}
+
+.bot
+{
+	width: 20em;
+	height: 3em;
+	background-color: #4B4B4B;
+	color: white;
+}
+
+.bot:hover
+{
+	background-color: #5C5CFF;
+	filter: brightness(0.90);
+	color: black;
+	font-weight:bold;
+}
+
+
+.error
+{
+	border-color: red;
+	background-color: #FFB3B3;
+}

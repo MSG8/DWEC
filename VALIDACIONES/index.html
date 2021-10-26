@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta type="author" content="Manuel Solis Gomez"/>
+		<meta type="description" content="Prueba de conectar base de dato y sacar un valor en concreto"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<title> Las Mujeres en la Histori de la Informatica </title>
+		<link rel="stylesheet" type="text/css" href="css/estiloFormulario.css"/>
+	</head>
+  <body>
+      <main>
+			<section>
+				<form action=" " method="post">
+					<h2> EMPLEADO NUEVO </h2>
+					<div>
+						<!-- HECHO -->
+						<label for="dni"> DNI </label>
+						<input type="text" name="dni" id="dni" value="" maxlength="9" pattern="[0-9]{8}[A-Z]{1}"/>
+					</div>
+					<div>
+						<!-- HECHO -->
+						<label for="nombre"> Nombre </label>
+						<input type="text" name="nombre" id="nombre" value="" pattern="[A-Z]{1}[a-z]{2,20}"/>
+					</div>
+					<div>
+						<!-- HECHO -->
+						<label for="apellido"> Apellido </label>
+						<input type="text" name="apellido" id="apellido" value="" /> <!-- obligo a que empiece por letra-->
+					</div>
+					<div>
+						<!-- HECHO -->
+						<label for="edad"> Edad </label>
+						<input type="number" name="edad" id="edad" value="" min="18"/>
+					</div>
+					<div>
+						<!-- HECHO -->
+						<label for="correo"> Correo </label> 
+						<input type="email" name="correo" id="correo" value=""/>
+					</div>
+					<div>
+						<!-- HECHO -->
+						<label for="telefono"> Telefono</label>
+						<input type="text" name="telefono" id="telefono" value="" maxlength="9" pattern="[0-9]{9}"/>
+					</div>
+					<div>
+						<label for="comunidades"> Comunidad </label>
+						<select name="comunidades" id="comunidades">
+							<option selected="selected" hidden="hidden" value="vacio"> COMUNIDAD </option>
+							<option value="asturia"> Asturias </option>
+							<option value="cataluña"> Cataluña </option>
+							<option value="valencia"> Valenciana </option>
+							<option value="galicia"> Galicia </option>
+							<option value="extremadura" id="extremadura" > Extremadura </option>
+						</select>
+					</div>
+					<div class="block">
+						<label for="radio">¿Te gusta el brocoli?</label>
+						<label for="radio"> Si </label>
+						<input type="radio" id="radio1" name="radio" value="SI">
+						<label for="radio"> No </label>
+						<input type="radio" id="radio2" name="radio" value="NO">
+					</div>
+					<!-- <div> select si se marca extremadura
+						<label for="provincia"> Provincia </label>
+						<select name="provincia" id="provincia">
+							<option selected="selected" hidden="hidden"> PROVINCIA </option>
+							<option value="asturia" id="asturias"> Badajoz </option>
+							<option value="asturia" id="asturias"> Caceres </option>
+						</select>
+					</div> -->
+					<input type="submit" value="ENVIAR" />
+				</form>
+			</section>
+			<script src="js/validar.js"></script>
+      </main>
+  </body>
+</HTML>

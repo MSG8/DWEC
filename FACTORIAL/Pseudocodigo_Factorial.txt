@@ -1,0 +1,48 @@
+PSEUDOCODIGO
+
+factorial
+
+v=introducirFactorial();
+r=calcularFactorial(v);
+mostrarResultado(r);
+
+
+entero introducirFactorial(void)
+{
+	do
+	{
+		escribir (Numero entero a sacar factorial:);
+		leer v;
+	} while (v<=0);
+	close v;
+}
+
+entero calcularFactorial (entero v)
+{
+	r=v; 4
+	while (v > 1)
+	{
+		r=r*(v-1); 12=4*(4-1) / 24=12*(3-1) / 24=24*(2-1) 
+		v=v-1; 4<-3 / 3<-2 / 2<-1
+	}
+	return r;
+}
+
+tambien se puede hacer por recursividad
+
+
+resultado=1
+entero calcularFactorial (entero resultado, entero valor)
+{
+	resultado=resultado*valor
+	if (valor > 1)
+	{
+		calcularFactorial ( resultado, valor - 1)
+	}
+	return resultado;
+}
+
+void mostrarResultado (entero r)
+{
+	escribir (El resultado del factorial es r);
+}

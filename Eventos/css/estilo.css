@@ -1,0 +1,22 @@
+/*
+    estilo.css
+    Autor: Manuel Solis Gomez
+    Livencia: gp3
+*/
+body
+{
+    margin: 0 auto;
+    text-align: center;
+}
+img
+{
+    width: 80%;
+}
+.setas
+{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 30px;
+    z-index: 2;
+}

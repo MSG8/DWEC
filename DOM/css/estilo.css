@@ -1,0 +1,22 @@
+.c1 span
+{
+    font-weight: bold;
+}
+.c2
+{
+    background-color: blueviolet;
+    position: absolute;
+    left: 0px;
+}
+.borde
+{
+    border: 2px solid blue;
+}
+.borde .negrita
+{
+    font-weight: bold;
+}
+img
+{
+    width: 300px;
+}

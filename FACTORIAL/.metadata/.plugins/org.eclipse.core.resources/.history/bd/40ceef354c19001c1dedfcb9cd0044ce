@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class tarea 
+{
+
+	public static void main(String[] args) 
+	{
+
+		Scanner tecla = null;
+		
+		tecla = new Scanner(System.in);
+		int val;
+		
+		System.out.println("Sacar el factorial de un numero");
+		
+		do
+		{
+			System.out.print("\n\n Numero entero a sacar factorial: ");
+			val = tecla.nextInt();
+			if (val <= 0)
+			{
+				System.out.print("\n Error en la entrada del valor a calcular");
+			}
+		} while (val<=0);
+		
+		int res=val; 
+		
+		while (val > 1)
+		{
+			res=res*(val-1); 
+			val=val-1; 
+		}
+		
+		System.out.print("\n El resultado del factorial es = "+res);
+		
+	}
+
+}

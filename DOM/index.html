@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=es dir=ltr>
+  <head>
+    <meta charset=utf-8>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <meta name="autor" content="masogo008@gmail.com"/>
+    <meta name="description" content="objetos"/>
+    <meta name="keywords" content=" javascript POO"/>
+    <title> DOM</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+  </head>
+  <body>
+    <h1> Curso de JavaScript DOM </h1>
+    <script src="js/dom.js"></script>
+
+    <input type="text" id="iNombre" />
+    <input type="text" id="iApellido" />
+    <input type="text" id="iAlias" />
+
+    <button onclick="ejecutar()"> EJECUTAR </button>
+
+    <hr/>
+    <p class="c1">
+      En un <span> lugar de </span>la mancha cuyo nombre no<span> quiero acordarme</span>..
+    </p>
+
+    <p class="c1">
+      2 prueba <span> lugar de </span>la mancha cuyo nombre no<span> quiero acordarme</span>..
+    </p>
+
+    <p class="c2">
+      muevete
+    </p>
+    <button onclick="mover()"> MOVER </button>
+
+    <hr />
+    <button onclick=construir()> CONSTRUIR </button>
+
+    <div class="borde">
+      <p>Soy el heredero</p>
+      <!-- <p>Este es un texto <span class="negrita">en negrita</span></p> -->
+      <!-- <img src="https://pajarokakariki.com/wp-content/uploads/2020/08/consejos-como-cuidar-cacatuas.jpg" />
+      <img src="img/cacatua.jpg" /> -->
+    </div>
+  
+    <hr />
+    <button onclick=destruirP()> DESTRUIR LAS P </button>
+    <button onclick=destruirImg()> DESTRUIR LAS IMG </button>
+
+    <hr />
+    <button onclick=destruirTotal()> DESTRUNCION TOTAL  </button>
+  </body>
+</html>
