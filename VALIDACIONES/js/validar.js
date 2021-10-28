@@ -11,8 +11,9 @@ window.onload = iniciar;
 function iniciar() 
 {
   let formulario = document.forms[0];
-  formulario.onsubmit=validar; //si se envia el formualrio (onsubmit) se realizara la funcion dada
-  document.getElementById('extremadura').onclick = provincias;
+  formulario.onsubmit = validar; //si se envia el formualrio (onsubmit) se realizara la funcion dada
+  let comunidades = document.getElementById('comunidades');
+  comunidades.onchange = extremadura;
 }
 
 function validar(evento) 
@@ -81,7 +82,58 @@ function nif(dni) //validacion para dni, inspirado en https://donnierock.com/201
   }
 }
 
+function extremadura() 
+{
+  if (document.getElementById('comunidades').value == 'extremadura' ) 
+  {
+    provincias();
+  }
+  else
+  {
+    if (document.getElementById('borrar')) //si este elemento existe, lo borramos
+    {
+      document.getElementById('borrar').remove();
+    }
+  }
+}
+
 function provincias() 
 {
+  console.log('provincias');
+
+  //CREACION DE ELEMENTOS
+  let div = document.createElement('div');
+  let label = document.createElement('label');
+  let select = document.createElement('select');
+  let optionOculta = document.createElement('option');
+  let optionBadajoz = document.createElement('option');
+  let optionCaceres = document.createElement('option');
+
+  //AÑADIR ATRIBUTOS A LOS ELEMENTOS
+  div.setAttribute('id', 'borrar');
+  label.setAttribute('for', 'provincia');
+  select.setAttribute('name', 'provincia');
+  select.setAttribute('id', 'provincia');
+  optionOculta.setAttribute('selected', 'selected');
+  optionOculta.setAttribute('hidden', 'hidden');
+  optionBadajoz.setAttribute('value', 'badajoz');
+  optionBadajoz.setAttribute('id', 'badajoz');
+  optionCaceres.setAttribute('value', 'caceres');
+  optionCaceres.setAttribute('id', 'caceres');
   
+  //COLOCAR ELEMENTOS Y NODOS DE TEXTO
+  div.appendChild(label);
+  label.appendChild(document.createTextNode(' Provincia '));
+  div.appendChild(select);
+  select.appendChild(optionOculta);
+  optionOculta.appendChild(document.createTextNode(' PROVINCIA '));
+  select.appendChild(optionBadajoz);
+  optionBadajoz.appendChild(document.createTextNode(' Badajoz '));
+  select.appendChild(optionCaceres);
+  optionCaceres.appendChild(document.createTextNode(' Caceres '));
+
+  //COLOCAMOS EL BLOQUE
+  let formulario = document.forms[0];
+  let boton = document.getElementById('enviar');
+  formulario.insertBefore(div, boton);
 }
