@@ -50,19 +50,23 @@ function validar(evento)
     evento.preventDefault(); //no enviar el formulario por defecto
   }
 
+  if (document.getElementById('provincia').value == 'vacio') // si se encuentra saleccionado la opcion por defecto fallara
+  {
+    console.log('provincia no seleccionada'); //nombre del error
+    evento.preventDefault(); //no enviar el formulario por defecto
+  }
+
   if (!document.getElementById('radio1').checked && !document.getElementById('radio2').checked) // si se encuentra saleccionado la opcion por defecto fallara
   {
     console.log('gusto por el brocoli no seleccionado'); //nombre del error
     evento.preventDefault(); //no enviar el formulario por defecto
   }
 
-  if (!document.getElementById('radio1').checked && !document.getElementById('radio2').checked) // si se encuentra saleccionado la opcion por defecto fallara
+  if (document.getElementById('radio1').checked && document.getElementById('comunidades').value == 'asturia') // si se encuentra saleccionado la opcion por defecto fallara
   {
     console.log('imposible que seas Asturiano y te guste el brocoli'); //nombre del error
     evento.preventDefault(); //no enviar el formulario por defecto
   }
-
-  evento.preventDefault(); //para practicas
 }
 
 function nif(dni) //validacion para dni, inspirado en https://donnierock.com/2011/11/05/validar-un-dni-con-javascript/
@@ -116,6 +120,7 @@ function provincias()
   select.setAttribute('id', 'provincia');
   optionOculta.setAttribute('selected', 'selected');
   optionOculta.setAttribute('hidden', 'hidden');
+  optionOculta.setAttribute('value', 'vacio');
   optionBadajoz.setAttribute('value', 'badajoz');
   optionBadajoz.setAttribute('id', 'badajoz');
   optionCaceres.setAttribute('value', 'caceres');
