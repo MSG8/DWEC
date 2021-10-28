@@ -42,16 +42,28 @@ function ponerSetas(evento)
   // seta.style.top = `${evento.clientY-20}px`;
   setaVarias.style.left = `${evento.clientX-20}px`;
   setaVarias.style.top = `${evento.clientY-20}px`;
+  setaVarias.oncontextmenu = eleminarme;
   div.appendChild(setaVarias);
   //body.insertBefore(setaVarias, mapa);
 }
 
-function quitarSetas() 
+function quitarSetas(evento) 
 {
+  console.log('quitar todas las setas');
+  evento.stopPropagation();
+  evento.preventDefault();
   let div = document.getElementsByTagName('div')[0];
 
   while (div.firstElementChild) // si tienes un elemento  
   {
     div.removeChild(div.firstElementChild); // eliminas el hijo (el hijo del primer niño)
   }
+}
+
+function eleminarme(evento) 
+{
+  console.log('aqui esta la seta');
+  evento.target.remove();
+  evento.stopPropagation();
+  evento.preventDefault();
 }

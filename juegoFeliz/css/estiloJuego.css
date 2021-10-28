@@ -1,0 +1,66 @@
+/*
+    Manuel Solis Gomez
+    Licencia: Libre
+    Este archivo se aplica en todos los archivps php que aplique formulario
+*/
+*/*Reseteamos valores por defecro que molesten al layout*/
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body /*Colocamos el ancho deseado como base de los demas elemento*/
+{
+    width: 800px;
+    margin: 0 auto; /*Centramos el elemento*/
+    background-image: URL(https://img.freepik.com/vector-gratis/controles-videojuegos-estilo-neon-pared-ladrillo_24908-58916.jpg?size=338&ext=jpg);
+}
+body main
+{
+    background-color: rgb(248, 234, 207);
+    width: 700px; /*Colocamos el ancho deseado */
+    margin: 50px auto; /*Centramos el elemento*/
+    padding: 20px 0; /*Hacemos que no se encuentre pegado al borde los elementos*/
+    text-align: center;
+    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body main h1
+{
+    font-family: fantasy;
+}
+body main #divPrincipal
+{
+    width: 90%; /*Colocamos el ancho deseado */
+    margin: 50px auto; /*Centramos el elemento*/
+    border: 5px solid blue;
+    padding: 20px; /*Hacemos que no se encuentre pegado al borde los elementos*/
+    position: relative;
+    height: 800px; /*si no colocamos esto el alto sera 0*/
+}
+.palabra
+{
+    position:absolute;
+    border-radius: 20px;
+    border: black 2px solid;
+    padding: 0.3rem;
+}
+body main #divPrincipal .palabra:nth-child(1)
+{
+    left: 45%;
+    top: 3em;
+}
+body main #divPrincipal .palabra:nth-child(2)
+{
+    left: 90%;
+    top: 6em;
+}
+body main #divPrincipal .palabra:nth-child(3)
+{
+    left: 20%;
+    top: 8em;
+}
+.palabra span
+{
+    color:rgb(7, 179, 179);
+}
