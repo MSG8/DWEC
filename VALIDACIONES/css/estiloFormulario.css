@@ -127,5 +127,6 @@ body main section form h2
 } 
 .error
 {
-    background-color: crimson;
+    color: crimson;
+    font-size: 16px;
 }
