@@ -45,21 +45,6 @@ body main #divPrincipal
     border: black 2px solid;
     padding: 0.3rem;
 }
-body main #divPrincipal .palabra:nth-child(1)
-{
-    left: 45%;
-    top: 3em;
-}
-body main #divPrincipal .palabra:nth-child(2)
-{
-    left: 90%;
-    top: 6em;
-}
-body main #divPrincipal .palabra:nth-child(3)
-{
-    left: 20%;
-    top: 8em;
-}
 .palabra span
 {
     color:rgb(7, 179, 179);
