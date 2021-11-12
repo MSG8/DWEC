@@ -1,0 +1,12 @@
+# JuegoFeliz
+  Aplicacion para practivar mecanografia
+
+# Requeriminetos
+  HTML5 + CSS + JS
+  node.js y jsDoc para generar la documentacion
+
+# Compilacion
+  Para generar la documentacion de JavaScript
+  jsdoc js -d docs
+
+# Git
