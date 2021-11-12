@@ -10,3 +10,7 @@
   jsdoc js -d docs
 
 # Git
+  git add . -> añadimos todos los archivos
+  git commit -m 'comentario' -> se realiza un commit
+  git push -> se inserta los archivos
+  archivo.gitignore -> colocamos los directorios o archivos que gitt tiene que ignorar

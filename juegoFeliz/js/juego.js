@@ -1,5 +1,5 @@
 /**
-  juego.css
+  @file juego.css
   @author Manuel Solis Gomez masogo008@gmail.com
   @license gp3
 */
