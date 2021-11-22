@@ -23,6 +23,9 @@ function comprobar()
   {
     alert('invalido');
   }
+
+  console.log(fetch(datos.json));
+
   // if (valIp.test(document.getElementById('ip').value))  //Para la ExpReg
   // {
   //   alert('valido');
