@@ -7,7 +7,7 @@
 
 # Compilacion
   Para generar la documentacion de JavaScript
-  jsdoc js -d docs
+   
 
 # Git
   git add . -> añadimos todos los archivos
